@@ -29,10 +29,10 @@ def add_d(det_name, fid_name, dist, err=0.01):
 
 # Initial guesses for locations of detectors
 add_p('pb-glass', 0., 1.35 + 0.2, 7.)  # half height of pb glass
-add_p('HD14.A', 0.35, 1.55, 7., err=[0.05, 0.1, 1.0])
-add_p('HD1.A', 0.8, 1.55, 7., err=[0.4, 0.1, 1.0])
+add_p('HD14.A', 0.35, 1.55, 7., err=[0.05, 0.001, 1.0])
+add_p('HD1.A', 0.8, 1.55, 7., err=[0.4, 0.001, 1.0])
 add_p('T2', 0.0, 1.35, 5., err=[0.001, 0.005, 2.0])
-add_p('magnet', 0., 1.35 + 0.4, 6., err=[0.005, 0.2, 2.0])
+add_p('magnet', 0., 1.35 + 0.4, 6., err=[0.005, 0.001, 2.0])
 add_p('T0', 0., 1.35 + 0.2, 0., err=[0.001, 0.01, 0.1])
 
 # Distances to fiducials
